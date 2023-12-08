@@ -6,7 +6,7 @@ class CreditCardState {
   CreditCardModel? success;
 
   CreditCardState({
-    required this.loading,
+    this.loading = false,
     this.error,
     this.success,
   });

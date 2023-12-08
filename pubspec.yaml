@@ -10,6 +10,8 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_redux: ^0.10.0
+  localstorage: ^4.0.1+4
+  redux: ^5.0.0
 
 dev_dependencies:
   flutter_test:
