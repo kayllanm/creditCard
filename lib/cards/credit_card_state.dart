@@ -1,18 +1,17 @@
 import 'package:creditcard/cards/credit_card_model.dart';
 
 class CreditCardState {
-  bool loading;
-  dynamic error;
-  CreditCardModel? success;
+  final List<CreditCardModel>? creditCard;
 
   CreditCardState({
-    this.loading = false,
-    this.error,
-    this.success,
+    this.creditCard,
   });
-  factory CreditCardState.initial() => CreditCardState(
-        loading: false,
-        error: null,
-        success: null,
-      );
+
+  CreditCardState copyWith({
+    required List<CreditCardModel> creditCard,
+  }) {
+    return CreditCardState(
+      creditCard: creditCard ?? this.creditCard,
+    );
+  }
 }
