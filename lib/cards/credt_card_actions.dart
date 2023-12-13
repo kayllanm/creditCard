@@ -1,7 +1,7 @@
-import 'package:creditcard/cards/credit_card_state.dart';
+import 'package:creditcard/cards/models.dart';
 
 class AddCard {
-  final CreditCardState creditCard;
+  final CreditCard creditCard;
   const AddCard({required this.creditCard});
 }
 

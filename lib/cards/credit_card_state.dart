@@ -1,14 +1,14 @@
-import 'package:creditcard/cards/credit_card_model.dart';
+import 'package:creditcard/cards/models.dart';
 
 class CreditCardState {
-  final List<CreditCardModel>? creditCard;
+  final List<CreditCard>? creditCard;
 
   CreditCardState({
     this.creditCard,
   });
 
   CreditCardState copyWith({
-    required List<CreditCardModel> creditCard,
+    required List<CreditCard> creditCard,
   }) {
     return CreditCardState(
       creditCard: creditCard ?? this.creditCard,
